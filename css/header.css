@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --backgroint-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -46px;
+}
+.body{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.link {
+    display: flex;
+}
+
+.link div {
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+.link div a,
+.link div button {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px 24px;
+}
+
+.link-more {
+    background-color: black;
+    position: relative;
+}
+
+.link-more ul {
+    cursor: auto;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    min-width: 160px;
+    margin-left: 1px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    z-index: 1;
+    list-style: none;
+    top: 100%;
+    box-shadow: 0 15px 25px rgba(1 1 1/ 15%);
+}
+
+.link-more:hover ul {
+    display: block;
+}
+
+.link .link-more ul li:hover {
+    background-color: var(--backgroint-color);
+}
+
+.link-more ul li {
+    display: block;
+    border: none;
+    padding: 8px 10px;
+    width: 100%;
+    float: none;
+    white-space: normal;
+    text-align: left;
+}
+
+.link-more ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin: 0;
+    padding-left: 6px;
+}
+
+.link .link-header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 12px 23px;
+}
+
+
+.link-cearsh a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.link-cearsh {
+    padding: 10px 24px;
+}
+
+.link-header:hover {
+    background-color: var(--backgroint-color);
+}
+
+.link-header a:hover {
+    color: #000;
+}
+
+.link-more:hover {
+    background-color: var(--backgroint-color);
+    color: #000;
+}
+
+.link-cearsh:hover {
+    background-color: rgb(255, 78, 54);
+
+}
+
+/*@media (max-width: 568px){
+    header{
+       width: 100%;
+    }
+}
